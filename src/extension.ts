@@ -1,27 +1,43 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
-
-// this method is called when your extension is activated
-// your extension is activated the very first time the command is executed
+var breakpointtoggle = true;
 export function activate(context: vscode.ExtensionContext) {
+	// idea: hide the debug/toolbar ?
 
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "debug-in-titlebar" is now active!');
-
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('debug-in-titlebar.helloWorld', () => {
-		// The code you place here will be executed every time your command is executed
-
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from Debug In Titlebar!');
+	let debugRestart	 	= vscode.commands.registerCommand(`debug-in-titlebar.debug-restart`, () => {
+							  vscode.commands.executeCommand('workbench.action.debug.restart');
+	});
+	let debugPause	 	= vscode.commands.registerCommand(`debug-in-titlebar.debug-pause`, () => {
+		vscode.commands.executeCommand('workbench.action.debug.pause');
+	});
+	let debugStart		 	= vscode.commands.registerCommand(`debug-in-titlebar.debug-start`, () => {
+							  vscode.commands.executeCommand('workbench.action.debug.start');
+	});
+	let debugStop		 	= vscode.commands.registerCommand(`debug-in-titlebar.debug-stop`, () => {
+							  vscode.commands.executeCommand('workbench.action.debug.stop');
+	});
+	let debugContinue	 	= vscode.commands.registerCommand(`debug-in-titlebar.debug-continue`, () => {
+							  vscode.commands.executeCommand('workbench.action.debug.continue');
+	});
+	let debugStepInto	 	= vscode.commands.registerCommand(`debug-in-titlebar.debug-stepInto`, () => {
+							  vscode.commands.executeCommand('workbench.action.debug.stepInto');
+	});
+	let debugStepOut	 	= vscode.commands.registerCommand(`debug-in-titlebar.debug-stepOut`, () => {
+							vscode.commands.executeCommand('workbench.action.debug.stepOut');
+	});
+	let debugStepOver	 	= vscode.commands.registerCommand(`debug-in-titlebar.debug-stepOver`, () => {
+							  vscode.commands.executeCommand('workbench.action.debug.stepOver');
+	});
+	let debugToggleBreakPoints	 	= vscode.commands.registerCommand(`debug-in-titlebar.debug-toggleBreakpoints`, () => {
+		if (!breakpointtoggle) {
+			vscode.commands.executeCommand('workbench.debug.viewlet.action.enableAllBreakpoints');
+		}
+		else {
+			vscode.commands.executeCommand('workbench.debug.viewlet.action.disableAllBreakpoints');
+		}
+		breakpointtoggle = !breakpointtoggle;
 	});
 
-	context.subscriptions.push(disposable);
+	context.subscriptions.push(debugRestart,debugStart,debugStop,debugContinue,debugStepInto,debugStepOut,debugStepOver,debugPause,debugToggleBreakPoints);
 }
 
-// this method is called when your extension is deactivated
 export function deactivate() {}

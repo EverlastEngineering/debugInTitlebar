@@ -25,53 +25,53 @@
 		"commands": [
 			{
 				"command": "debug-in-titlebar.debug-restart",
-				"title": "Debug In Titlebar: Restart Debug",
+				"title": "Restart Debug",
 				"icon": "$(debug-restart)",
 				"enablement": "inDebugMode"
 			},
 			{
 				"command": "debug-in-titlebar.debug-pause",
-				"title": "Debug In Titlebar: Pause Debug",
+				"title": "Pause Debug",
 				"icon": "$(debug-pause)"
 			},
 			{
 				"command": "debug-in-titlebar.debug-start",
-				"title": "Debug In Titlebar: Start Debug",
+				"title": "Start Debug",
 				"icon": "$(debug-start~spin)",
 				"enablement": "debugState != 'initializing'"
 			},
 			{
 				"command": "debug-in-titlebar.debug-stop",
-				"title": "Debug In Titlebar: Stop Debug",
+				"title": "Stop Debug",
 				"icon": "$(debug-stop)",
 				"enablement": "inDebugMode"
 			},
 			{
 				"command": "debug-in-titlebar.debug-continue",
-				"title": "Debug In Titlebar: Continue Debug",
+				"title": "Continue Debug",
 				"icon": "$(debug-continue)"
 			},
 			{
 				"command": "debug-in-titlebar.debug-stepInto",
-				"title": "Debug In Titlebar: Step Into",
+				"title": "Step Into",
 				"icon": "$(debug-step-into)",
 				"enablement": "inDebugMode && debugState == 'stopped'"
 			},
 			{
 				"command": "debug-in-titlebar.debug-stepOut",
-				"title": "Debug In Titlebar: Step Out",
+				"title": "Step Out",
 				"icon": "$(debug-step-out)",
 				"enablement": "inDebugMode && debugState == 'stopped'"
 			},
 			{
 				"command": "debug-in-titlebar.debug-stepOver",
-				"title": "Debug In Titlebar: Step Over",
+				"title": "Step Over",
 				"icon": "$(debug-step-over)",
 				"enablement": "inDebugMode && debugState == 'stopped'"
 			},
 			{
 				"command": "debug-in-titlebar.debug-toggleBreakpoints",
-				"title": "Debug In Titlebar: Toggle Breakpoints",
+				"title": "Toggle All Breakpoints",
 				"icon": "$(activate-breakpoints)",
 				"enablement": "inDebugMode"
 			}

@@ -1,8 +1,8 @@
 #### [Repository](https://github.com/EverlastEngineering/debugInTitlebar)&nbsp;&nbsp;|&nbsp;&nbsp;[Issues](https://github.com/EverlastEngineering/debugInTitlebar/issues)
 
-*Frustrated by wanting immediate access to the debug controls?* Using the toolbar floating always means _something_ gets hidden by it, so this extension was born while half-paying attention to a Google Meet.
+Using the toolbar floating always means _something_ gets hidden by it, and when docked, you can only control them with the debug viewlet open. This extension was born to solve this, while half-paying attention to a Google Meet.
 
-Once installed, go to your Preferences and search for `debug toolbar` and set to docked or hidden to prevent that floating toolbar from wrecking your flow.
+Once installed, go to your Preferences->Settings and search for `debug toolbar`, then set to docked or hidden to prevent that floating toolbar from wrecking your flow.
 
 This extension reveals the controls here:
 

@@ -1,13 +1,27 @@
 {
 	"name": "debug-in-titlebar",
-	"displayName": "Debug In Titlebar",
-	"description": "Moves the debug controls into the titlebar.",
-	"version": "0.0.1",
+	"publisher": "EverlastEngineering",
+	"displayName": "Debug Controls In Titlebar",
+	"description": "Shows the debug controls into the titlebar.",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.52.0"
 	},
 	"categories": [
+		"Debuggers",
 		"Other"
+	],
+	"icon": "images/icon.png",
+	"galleryBanner": {
+		"color": "#220033",
+		"theme": "dark"
+	},
+	"keywords": [
+		"debug",
+		"controls",
+		"toolbar",
+		"titlebar",
+		"docked"
 	],
 	"activationEvents": [
 		"onCommand:debug-in-titlebar.debug-restart",
@@ -92,38 +106,38 @@
 				{
 					"command": "debug-in-titlebar.debug-continue",
 					"group": "navigation@1999901",
-					"when": "debuggersAvailable &&inDebugMode && debugState == 'stopped'"
+					"when": "debuggersAvailable && inDebugMode && debugState == 'stopped'"
 				},
 				{
 					"command": "debug-in-titlebar.debug-stepOver",
 					"group": "navigation@1999903",
-					"when": "debuggersAvailable"
+					"when": "debuggersAvailable && inDebugMode"
 					
 				},
 				{
 					"command": "debug-in-titlebar.debug-stepInto",
 					"group": "navigation@1999904",
-					"when": "debuggersAvailable"
+					"when": "debuggersAvailable && inDebugMode"
 				},
 				{
 					"command": "debug-in-titlebar.debug-stepOut",
 					"group": "navigation@1999905",
-					"when": "debuggersAvailable"
+					"when": "debuggersAvailable && inDebugMode"
 				},
 				{
 					"command": "debug-in-titlebar.debug-restart",
 					"group": "navigation@1999907",
-					"when": "debuggersAvailable"
+					"when": "debuggersAvailable && inDebugMode"
 				},
 				{
 					"command": "debug-in-titlebar.debug-stop",
 					"group": "navigation@1999908",
-					"when": "debuggersAvailable"
+					"when": "debuggersAvailable && inDebugMode"
 				},
 				{
 					"command": "debug-in-titlebar.debug-toggleBreakpoints",
 					"group": "navigation@1999908",
-					"when": "debuggersAvailable"
+					"when": "debuggersAvailable && inDebugMode"
 				}
 			]
 		}
@@ -148,5 +162,9 @@
 		"mocha": "^8.1.3",
 		"typescript": "^4.1.2",
 		"vscode-test": "^1.4.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/EverlastEngineering/debugInTitlebar.git"
 	}
 }

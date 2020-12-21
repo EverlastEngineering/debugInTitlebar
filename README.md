@@ -1,65 +1,22 @@
-# debug-in-titlebar README
+#### [Repository](https://github.com/EverlastEngineering/debugInTitlebar)&nbsp;&nbsp;|&nbsp;&nbsp;[Issues](https://github.com/EverlastEngineering/debugInTitlebar/issues)
 
-This is the README for your extension "debug-in-titlebar". After writing up a brief description, we recommend including the following sections.
+*Frustrated by wanting immediate access to the debug controls?* Using the toolbar floating always means _something_ gets hidden by it, so this extension was born while half-paying attention to a Google Meet.
 
-## Features
+Once installed, go to your Preferences and search for `debug toolbar` and set to docked or hidden to prevent that floating toolbar from wrecking your flow.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+This extension reveals the controls here:
 
-For example if there is an image subfolder under your extension project workspace:
+![Screenshot](images/feature.png)
 
-\!\[feature X\]\(images/feature-x.png\)
+There is also an additional control, the Toggle Breakpoints button, which isn't normally visible in the toolbar. This is handy when you are in the midst of a deep dive into code and want to "just run the darn thing" without nuking all your breakpoints. Toggle, play, and toggle back for next time.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+# Known Issues
 
-## Requirements
+The "Toggle All Breakpoints" button isn't state-aware of the existing breakpoints Enable/Disable button, and currently can't be as VSCode doesn't expose that as a parameter. It just means that the first time you click this extension's Toggle button they might already be disabled. Click it again, and all will work.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Also, no icons show titlebar until a file is open.
 
 ## Release Notes
-
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Initial release. No plans for additional features at this time. 

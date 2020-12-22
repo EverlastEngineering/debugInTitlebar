@@ -18,7 +18,7 @@ Also, no icons show titlebar until a file is open.
 
 ## Release Notes
 
-### ^1.0.4
+### ^1.0.5
 Good suggestion to implement the default start button as a configurable option. Thanks [DominikVonk](https://github.com/DominicVonk) for implementing and [ctf0](https://github.com/ctf0) for the suggestion.
 ### 1.0.1
 Community patch to remove the spinning logo accidentally left in, which didn't work on my local machine anyway (which is why it was left in by accident).

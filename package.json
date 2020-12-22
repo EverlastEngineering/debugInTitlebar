@@ -3,7 +3,7 @@
 	"publisher": "EverlastEngineering",
 	"displayName": "Debug Controls In Titlebar",
 	"description": "Shows the debug controls into the titlebar.",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"engines": {
 		"vscode": "^1.52.0"
 	},
@@ -44,7 +44,8 @@
 			  "default": false,
 			  "description": "Hides the Debug Start Icon."
 			}
-		     },
+		     }
+		},
 		"commands": [
 			{
 				"command": "debug-in-titlebar.debug-restart",

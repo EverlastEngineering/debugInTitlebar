@@ -36,6 +36,15 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"configuration": {
+		      "title": "Debug Controls In Titlebar",
+		      "properties": {
+			"debug_controls_in_titleblar.hideDebugStart": {
+			  "type": "boolean",
+			  "default": false,
+			  "description": "Hides the Debug Start Icon."
+			}
+		     },
 		"commands": [
 			{
 				"command": "debug-in-titlebar.debug-restart",
@@ -95,7 +104,7 @@
 				{
 					"command": "debug-in-titlebar.debug-start",
 					"group": "navigation@1999901",
-					"when": "debuggersAvailable && !inDebugMode || debugState == 'initializing'"
+					"when": "debuggersAvailable && !debug_controls_in_titleblar.hideDebugStart && !inDebugMode || debugState == 'initializing'"
 
 				},
 				{

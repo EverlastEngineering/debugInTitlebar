@@ -51,7 +51,7 @@
 			{
 				"command": "debug-in-titlebar.debug-start",
 				"title": "Start Debug",
-				"icon": "$(debug-start~spin)",
+				"icon": "$(debug-start)",
 				"enablement": "debugState != 'initializing'"
 			},
 			{

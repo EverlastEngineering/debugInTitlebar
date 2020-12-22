@@ -17,6 +17,10 @@ The "Toggle All Breakpoints" button isn't state-aware of the existing breakpoint
 Also, no icons show titlebar until a file is open.
 
 ## Release Notes
+
+### 1.0.1
+Community patch to remove the spinning logo accidentally left in, which didn't work on my local machine anyway (which is why it was left in by accident).
+Thanks [DominikVonk](https://github.com/DominicVonk).
 ### 1.0.0
 
 Initial release. No plans for additional features at this time. 

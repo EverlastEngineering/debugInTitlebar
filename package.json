@@ -3,7 +3,7 @@
 	"publisher": "EverlastEngineering",
 	"displayName": "Debug Controls In Titlebar",
 	"description": "Shows the debug controls into the titlebar.",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"engines": {
 		"vscode": "^1.52.0"
 	},

@@ -111,43 +111,43 @@
 				{
 					"command": "debug-in-titlebar.debug-pause",
 					"group": "navigation@1999901",
-					"when": "debuggersAvailable && inDebugMode && debugState == 'running'"
+					"when": "config.debug.toolBarLocation == 'hidden' && debuggersAvailable && inDebugMode && debugState == 'running'"
 				},
 				{
 					"command": "debug-in-titlebar.debug-continue",
 					"group": "navigation@1999901",
-					"when": "debuggersAvailable && inDebugMode && debugState == 'stopped'"
+					"when": "config.debug.toolBarLocation == 'hidden' && debuggersAvailable && inDebugMode && debugState == 'stopped'"
 				},
 				{
 					"command": "debug-in-titlebar.debug-stepOver",
 					"group": "navigation@1999903",
-					"when": "debuggersAvailable && inDebugMode"
+					"when": "config.debug.toolBarLocation == 'hidden' && debuggersAvailable && inDebugMode"
 					
 				},
 				{
 					"command": "debug-in-titlebar.debug-stepInto",
 					"group": "navigation@1999904",
-					"when": "debuggersAvailable && inDebugMode"
+					"when": "config.debug.toolBarLocation == 'hidden' && debuggersAvailable && inDebugMode"
 				},
 				{
 					"command": "debug-in-titlebar.debug-stepOut",
 					"group": "navigation@1999905",
-					"when": "debuggersAvailable && inDebugMode"
+					"when": "config.debug.toolBarLocation == 'hidden' && debuggersAvailable && inDebugMode"
 				},
 				{
 					"command": "debug-in-titlebar.debug-restart",
 					"group": "navigation@1999907",
-					"when": "debuggersAvailable && inDebugMode"
+					"when": "config.debug.toolBarLocation == 'hidden' && debuggersAvailable && inDebugMode"
 				},
 				{
 					"command": "debug-in-titlebar.debug-stop",
 					"group": "navigation@1999908",
-					"when": "debuggersAvailable && inDebugMode"
+					"when": "config.debug.toolBarLocation == 'hidden' && debuggersAvailable && inDebugMode"
 				},
 				{
 					"command": "debug-in-titlebar.debug-toggleBreakpoints",
 					"group": "navigation@1999908",
-					"when": "debuggersAvailable && inDebugMode"
+					"when": "config.debug.toolBarLocation == 'hidden' && debuggersAvailable && inDebugMode"
 				}
 			]
 		}

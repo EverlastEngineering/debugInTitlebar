@@ -37,17 +37,16 @@
 	"main": "./out/extension.js",
 	"contributes": {
 		"configuration": {
-		      "title": "Debug Controls In Titlebar",
-		      "properties": {
-			"debugControlsInTitlebar.hideDebugStart": {
-			  "type": "boolean",
-			  "default": false,
-			  "description": "Hides the Debug Start Icon."
+			"title": "Debug Controls In Titlebar",
+			"properties": {
+				"debugControlsInTitlebar.hideDebugStart": {
+					"type": "boolean",
+					"default": false,
+					"description": "Hides the Debug Start Icon."
+				}
 			}
-		     }
 		},
-		"commands": [
-			{
+		"commands": [{
 				"command": "debug-in-titlebar.debug-restart",
 				"title": "Restart Debug",
 				"icon": "$(debug-restart)",
@@ -101,8 +100,7 @@
 			}
 		],
 		"menus": {
-			"editor/title": [
-				{
+			"editor/title": [{
 					"command": "debug-in-titlebar.debug-start",
 					"group": "navigation@1999901",
 					"when": "debuggersAvailable && !config.debugControlsInTitlebar.hideDebugStart && !inDebugMode || debugState == 'initializing'"
@@ -122,7 +120,7 @@
 					"command": "debug-in-titlebar.debug-stepOver",
 					"group": "navigation@1999903",
 					"when": "debuggersAvailable && inDebugMode"
-					
+
 				},
 				{
 					"command": "debug-in-titlebar.debug-stepInto",

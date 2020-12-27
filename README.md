@@ -18,6 +18,9 @@ Also, no icons show titlebar until a file is open.
 
 ## Release Notes
 
+### ^1.0.6
+This debug toolbar will now only show when the built-in is set to hidden.
+
 ### ^1.0.5
 Good suggestion to implement the default start button as a configurable option. Thanks [DominikVonk](https://github.com/DominicVonk) for implementing and [ctf0](https://github.com/ctf0) for the suggestion.
 ### 1.0.1

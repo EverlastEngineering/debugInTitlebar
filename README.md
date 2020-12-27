@@ -14,14 +14,11 @@ There is also an additional control, the Toggle Breakpoints button, which isn't 
 
 The "Toggle All Breakpoints" button isn't state-aware of the existing breakpoints Enable/Disable button, and currently can't be as VSCode doesn't expose that as a parameter. It just means that the first time you click this extension's Toggle button they might already be disabled. Click it again, and all will work.
 
-Also, no icons show titlebar until a file is open.
+Also, no debug icons will show in the titlebar if there are no files open.
 
 ## Release Notes
 
-### ^1.0.6
-This debug toolbar will now only show when the built-in is set to hidden.
-
-### ^1.0.5
+### ^1.0.8
 Good suggestion to implement the default start button as a configurable option. Thanks [DominikVonk](https://github.com/DominicVonk) for implementing and [ctf0](https://github.com/ctf0) for the suggestion.
 ### 1.0.1
 Community patch to remove the spinning logo accidentally left in, which didn't work on my local machine anyway (which is why it was left in by accident).

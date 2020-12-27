@@ -3,7 +3,7 @@
 	"publisher": "EverlastEngineering",
 	"displayName": "Debug Controls In Titlebar",
 	"description": "Shows the debug controls into the titlebar.",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"engines": {
 		"vscode": "^1.52.0"
 	},
@@ -42,7 +42,7 @@
 				"debugControlsInTitlebar.hideDebugStart": {
 					"type": "boolean",
 					"default": false,
-					"description": "Hides the Debug Start Icon."
+					"description": "Prevents the debug start icon from showing when the debugger is not running. The rest of the controls will show when a debugger is started from another avenue."
 				}
 			}
 		},
